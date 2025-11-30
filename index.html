@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envie seu Currículo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>🚀 Junte-se a Nós</h1>
+        <p class="subtitle">Envie seu currículo e faça parte do nosso time</p>
+
+        <form id="uploadForm">
+            <div class="upload-area" id="uploadArea">
+                <div class="upload-icon">📄</div>
+                <div class="upload-text">Clique ou arraste seu currículo aqui</div>
+                <div class="upload-hint">PDF, DOC ou DOCX (máx. 5MB)</div>
+                <input type="file" id="fileInput" accept=".pdf,.doc,.docx" required>
+            </div>
+
+            <div class="file-info" id="fileInfo">
+                <span class="file-name" id="fileName"></span>
+            </div>
+
+            <button type="submit" class="submit-btn" id="submitBtn">Enviar Currículo</button>
+        </form>
+
+        <div class="success-message" id="successMessage">
+            ✓ Currículo enviado com sucesso! Entraremos em contato em breve.
+        </div>
+
+        <div class="results-container" id="resultsContainer"
+            style="display: none; margin-top: 20px; padding: 15px; background-color: #f8f9fa; border-radius: 8px; border: 1px solid #e9ecef;">
+            <h3>Dados Extraídos pela IA:</h3>
+            <div id="extractedData"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
